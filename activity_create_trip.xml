@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".CreateTripActivity">
+
+    <!-- Trip Name -->
+    <EditText
+        android:id="@+id/editTextTripName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Trip Name"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Trip Start Date -->
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:focusable="false"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toBottomOf="@id/editTextTripName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Trip End Date -->
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="End Date"
+        android:focusable="false"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toBottomOf="@id/editTextStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Trip Description -->
+    <EditText
+        android:id="@+id/editTextTripDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Trip Description"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toBottomOf="@id/editTextEndDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Friends Button -->
+    <Button
+        android:id="@+id/buttonAddFriends"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Friends"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/editTextTripDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonCreateTrip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create Trip"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/buttonAddFriends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Show Trip Summary Button -->
+    <Button
+        android:id="@+id/buttonShowTripSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Trip Summary"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateTrip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

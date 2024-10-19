@@ -1,0 +1,10 @@
+<resources>
+    <!-- Other strings -->
+    <string-array name="friends_list">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+</resources>

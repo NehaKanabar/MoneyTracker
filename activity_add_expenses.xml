@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".AddExpensesActivity">
+
+    <!-- Expense Description -->
+    <EditText
+        android:id="@+id/editTextExpenseDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Expense Description"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Expense Amount -->
+    <EditText
+        android:id="@+id/editTextExpenseAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Amount Spent (₹)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toBottomOf="@id/editTextExpenseDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Who Paid -->
+    <Spinner
+        android:id="@+id/spinnerWhoPaid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/custom_input_background"
+        app:layout_constraintTop_toBottomOf="@id/editTextExpenseAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:entries="@array/friends_list" />
+
+    <!-- Select Date Button -->
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/spinnerWhoPaid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Expense Button -->
+    <Button
+        android:id="@+id/buttonAddExpense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/buttonSelectDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Expenses Summary TextView -->
+    <TextView
+        android:id="@+id/textViewExpensesSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="No expenses added yet."
+        android:textSize="16sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonAddExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
