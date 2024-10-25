@@ -21,11 +21,6 @@ Split Money provides a seamless platform where users can easily input expenses, 
 
 - **🎨 Attractive User Interface:** Modern design elements that enhance user experience.
 
-## 👁️‍🗨️ Visual Walkthrough
-### Sneak Peek
-![Split Calculation](path/to/screenshot1.png)
-![Expenses Summary](path/to/screenshot2.png)
-
 ## 🛠️ Installation
 1. Clone the repository:
    ```bash
